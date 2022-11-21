@@ -61,4 +61,8 @@
         border: none;
         width: 100%;
     }
+    &:hover{
+        cursor: pointer;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    }
 }

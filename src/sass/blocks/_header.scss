@@ -6,11 +6,18 @@
     &__content{
         height: 100px;
         padding-top: 25px;
-        position: fixed;
+        position: absolute;
         z-index: 100;
         display: grid;
         align-items: center;
         grid-template-columns: minmax(400px, 860px) minmax(100px, 160px) 1fr;
+        transition: 0.5s;
+        &-scroll{
+            position: fixed;
+            background: #000;
+            padding-top: 0;
+            height: 80px;
+        }
     }
     &__nav{
         ul {
@@ -45,4 +52,11 @@
             font-family: 'Oranienbaum', serif;
         }
     }
+}
+
+.scrolled .header {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 50px;
+    background: #f00;
 }
