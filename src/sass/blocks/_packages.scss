@@ -10,5 +10,6 @@
     &__cards{
         display: flex;
         justify-content: space-around;
+        transition: 0.5s;
     }
 }
