@@ -1,0 +1,42 @@
+.banner{
+    position: relative;
+    &__bg{
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+    // background: url(../../img/bg-main.png) no-repeat 50%/cover;
+    min-height: 660px;
+    &__container{
+        height: 660px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: transparent;
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+        margin-bottom: 47px;
+        width: 212px;
+    }
+    &__title{
+        color: $light-text;
+        font-size: 20px;
+        max-width: 330px;
+    }
+    &__subtitle{
+        color: $light-text;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: 'Oranienbaum', serif;
+        font-size: 20px;
+        text-decoration: underline;
+        color: #b1a37c;
+        max-width: 330px;
+        &:hover{
+            color: $light-text;
+        }
+    }
+}
+    

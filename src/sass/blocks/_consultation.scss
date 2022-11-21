@@ -1,0 +1,46 @@
+.consultation{
+    &__container{
+        position: relative;
+        padding-top: 68px;
+        overflow: hidden;
+    }
+    &__corner{
+        width: 200px;
+        background: #e43;
+        position: absolute;
+        top: 25px;
+        left: -50px;
+        text-align: center;
+        line-height: 35px;
+        letter-spacing: 1px;
+        color: #fff;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        box-shadow: 0 0 20px rgba(0,0,0,.3);
+    }
+    &__title{
+        display: flex;
+        justify-content: center;
+    }
+    &__descr{
+        text-transform: uppercase;
+        max-width: 900px;
+        margin: 0 auto;
+        line-height: 35px;
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    &__img{
+        width: 100%;
+    }
+}
+
+.img__descr{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    color: gray;
+    font-weight: 100;
+}

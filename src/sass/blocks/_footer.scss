@@ -1,0 +1,49 @@
+.footer{
+    &__container{
+        padding-top: 30px;
+        background-color: transparent;
+    }
+    &__top{
+        display: flex;
+        justify-content: center;
+    }
+    &__btn{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        border: 1px #fff solid;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        max-width: 94px;
+        font-size: 13px;
+        border-radius: 0;
+        &:hover{
+            color:#fff;
+        }
+    }
+    &__bottom{
+        ul {
+            margin-left: 0; 
+            padding-left: 0;
+           }
+        li{
+            list-style-type: none;
+            color: #fff;
+        }
+        a{
+            color:#fff;
+        }
+        p{
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+.btn{
+    &__icon{
+        scale: 0.5
+    }
+}

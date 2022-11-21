@@ -1,0 +1,22 @@
+.howItWorks{
+    &__container{
+        padding-top: 50px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        &-640{
+            max-width: 640px;
+        }
+    }
+    &__descr{
+        font-weight: 100;
+        p{
+            margin-bottom: 25px;
+        }
+    }
+}
+
+.weekend{
+    width: 520px;
+    margin: 0 auto;
+}

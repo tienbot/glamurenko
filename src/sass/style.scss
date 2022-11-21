@@ -1,0 +1,68 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+
+@import 'base/variables';
+@import 'base/mixins';
+
+/* СБРОС ДЕФОЛТНЫХ СТИЛЕЙ НАЧАЛО */
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+    font-family: 'Oranienbaum', serif;
+}
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+/* СБРОС ДЕФОЛТНЫХ СТИЛЕЙ КОНЕЦ */
+body{
+    background-color: #000;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 0;
+}
+
+.title{
+    font-size: 32px;
+    color: $text;
+    margin-bottom: 40px;
+}
+
+@import 'blocks/header';
+@import 'blocks/banner';
+@import 'blocks/consultation';
+@import 'blocks/howItWorks';
+@import 'blocks/table';
+@import 'blocks/books';
+@import 'blocks/packages';
+@import 'blocks/card';
+@import 'blocks/steps';
+@import 'blocks/footer';
+
+@import 'blocks/media'; //должно быть импортированно в самом низу (после всех остальных секций)!

@@ -1,0 +1,123 @@
+@media (max-width: 1200px){
+    .header{
+        padding: 0 15px;
+        &__content{
+            padding-top: 0;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        &__nav{
+            li{
+                margin-top: 15px;
+            }
+        }
+    }
+    .banner{
+        &__container{
+            padding: 0 15px;
+        }
+        &__bg{
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            object-fit: cover;
+            overflow: hidden;
+            height: 660px;
+        }
+    }
+    .footer{
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 992px){
+    .container{
+        width: 100%;
+    }
+    .header{
+        &__container{
+            display: flex;
+            justify-content: center;
+        }
+        &__content{
+            grid-template-columns: 1fr;
+        }
+        &__social{
+            display: none;
+        }
+        &__tel{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    // .container{
+    //     max-width: 540px;
+    // }
+    .header{
+        &__nav{
+            ul{
+                padding: 0 20px;
+                flex-wrap: wrap;
+            }
+        }
+    }
+    .banner{
+        &__subtitle{
+            max-width: 300px;
+        }
+    }
+    .howItWorks{
+        &__container{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    .table{
+        th,td{
+            padding: 0;
+        }
+    }
+    .packages{
+        &__cards{
+            flex-wrap: wrap;
+        }
+        &__card{
+            margin-bottom: 20px;
+        }
+    }
+    .steps{
+        &__container{
+            padding: 0 20px;
+        }
+        &__step{
+            grid-template-columns: 190px 50%;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .consultation{
+        &__title{
+            width: 300px;
+            margin: 0 auto 40px auto;
+            text-align: center;
+        }
+    }
+    .weekend{
+        width: 100%;
+    }
+    .packages{
+        &__container{
+            padding-top: 50px;
+        }
+    }
+    .table{
+        display: none;
+    }
+    .steps{
+        &__step{
+            grid-template-columns: 40% 50%;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.table{
+    color: #000;
+    margin-bottom: 0;
+    &__checkUp{
+        border: 1px #dedede solid;
+        p{
+            font-family: 'Oranienbaum', serif;
+            text-align: center;
+            font-size: 25px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+    }
+    table{
+        border-collapse: collapse;
+    }
+    &__header{
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    &__month{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    th{
+        background-color: #ffd100;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: 2px solid #fdbe00;
+        text-align: center;
+        font-size: 22px;
+        &.left{
+            text-align: left;
+            font-weight: bold; 
+        }
+    }
+    td{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #fff000;
+        border: 2px solid #fdbe00;
+        text-align: center;
+        img{
+            margin: 0 auto;
+        }
+        &.left{
+            text-align: left;
+            font-weight: bold; 
+        }
+    }
+    &__price{
+        font-size: 30px;
+    }
+    &__button{
+        background-color: #000;
+        font-size: 18px;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 5px;
+        padding: 10px 20px;
+        border: none;
+    }
+}
+
+.currency{
+    display: flex;
+    justify-content: center;
+    &__item{
+        border: 1px solid #000;
+        width: 55px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+}
