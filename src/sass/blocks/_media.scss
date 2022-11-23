@@ -40,6 +40,9 @@
         }
         &__content{
             grid-template-columns: 1fr;
+            &-scroll{
+                height: 90px;
+            }
         }
         &__social{
             display: none;
@@ -51,9 +54,6 @@
 }
 
 @media (max-width: 768px){
-    // .container{
-    //     max-width: 540px;
-    // }
     .header{
         &__nav{
             ul{
@@ -97,6 +97,9 @@
 }
 
 @media (max-width: 576px){
+    .banner__logo{
+        max-width: 160px;
+    }
     .consultation{
         &__title{
             width: 300px;

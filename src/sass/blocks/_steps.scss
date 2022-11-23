@@ -15,6 +15,11 @@
         gap: 35px;
         align-items: center;
         margin-bottom: 35px;
+        img{
+            &:hover{
+                cursor: pointer;
+            }
+        }
     }
     &__descr{
         font-size: 25px;
